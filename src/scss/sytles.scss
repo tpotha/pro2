@@ -1,0 +1,103 @@
+
+@import 'https://use.fontawesome.com/releases/v5.1.0/css/all.css';
+@import 'bootstrap.css';
+body {
+    font-family: sans-serif;
+    padding: 0;
+    margin: 0;
+    min-width: 500px;    
+}
+
+* {
+    box-sizing: border-box;
+    word-wrap: break-word;
+}
+
+#topSec {
+    background: white;
+}
+
+nav{
+ border: 1px solid gray;
+}
+
+ h1{
+    font-family: fantasy;
+    letter-spacing: -1px;
+    color: darkorange;
+    text-shadow: 1px 2px 5px #499167;
+    margin: 0;
+    text-indent: 20px;
+    padding: 10px 2rem 10px 10px;
+    text-decoration: none;
+ }
+
+.brand{
+    text-decoration: none;
+}
+.hero-unit {
+    background: url("../img/hero6.jpg") center center no-repeat;
+    background-size: cover;
+    height: 100vh;
+    width: 100%;
+    margin-top: 80px;
+    text-align: center;
+    align-items: center;
+}
+
+.hero-content{
+    widows: 50%;
+    align-content: center;
+}
+
+.container{
+    padding: 1rem;
+}
+
+.colume-border{
+    border: 1px solid gray;
+    background: #7CB8B8;
+}
+
+#carousal{
+    width: 100%;
+}
+
+/* Begin Footer*/
+footer {
+    background: rgb(169, 204, 230);
+    text-align: center;
+    padding: 0;
+    margin: 0;
+     min-width: 310px;
+     border: 2px solid black;
+}
+footer ul{
+    padding-top: 10px;
+    padding-left: 0;
+    margin: 0;
+    
+}
+
+footer ul a{
+    text-decoration: underline;
+    color: black;
+   }
+
+footer p {
+    margin: 0;
+    padding:20px;
+    color: darkblue;
+    text-align: center;
+}
+
+.social-links{
+   text-align: center;
+    padding: 10px;
+    font-size: 30px;
+}
+
+
+/* End Footer*/
+
+
