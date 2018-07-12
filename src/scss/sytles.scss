@@ -26,7 +26,7 @@ nav{
  h1{
     font-family: fantasy;
     letter-spacing: -1px;
-    color: darkorange;
+    color: rgb(255, 30, 0);
     text-shadow: 1px 2px 5px #499167;
     margin: 0;
     text-indent: 20px;
@@ -50,6 +50,7 @@ nav{
 
 .search-form {
     padding: 60px;
+    widows: 100px;
 }
 
 .hero-content{
@@ -89,6 +90,15 @@ footer ul{
     padding-left: 0;
     margin: 0;
     
+}
+
+a{
+    color: black;
+}
+
+.btn, .active{
+    font-size: 20px;
+    font-weight: 700;
 }
 
 footer ul a{
@@ -140,7 +150,6 @@ footer p {
         text-align: center;
         text-indent: 0;
     }
-
 
 }
 

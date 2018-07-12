@@ -3,7 +3,7 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="css/sytles.css" />
     <title>
@@ -30,7 +30,7 @@
                             <li class="nav-item dropdown">
                                 <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Products</a>
                                 <div role="dropdown-box" class="dropdown-menu">
-                                    <a class="dropdown-item" aria-label="Vegitables" href="#">Vegitables</a>
+                                    <a class="dropdown-item" aria-label="Vegitables" href="#">Vegetables</a>
                                     <a class="dropdown-item" aria-label="Fruits" href="#">Fruits</a>
                                     <a class="dropdown-item" aria-label="Flowers" href="#">Flowers</a>
                                     <div class="dropdown-divider"></div>
@@ -64,39 +64,38 @@
             </div>
         </div>
     </div>
-    <div role="hero-image-section" class="hero-unit">
+    <div role="presentation" class="hero-unit">
         <div class="hero-content">
 
             <form action="" class="form-inline search-form" role="form">
-                <div role="form-group" class="form-group">
+                <div class="form-group d-flex">
                     <label for="search" class="sr-only">Search: </label>
-                    <input type="text" role="search" name="search" id="" class="form-control form-control-lg text-center" placeholder="Search items">&nbsp;
-
+                    <input type="text" role="searchbox" name="search" id="search" class="form-control form-control-lg text-center" placeholder="Search items">
+                    <button role="button" type="submit" class="btn btn-success btn-lg">
+                        Go!
+                    </button>
+        
                 </div>
-                <button role="button" type="submit" class="btn btn-success btn-lg">
-                    Go!
-                </button>
-
             </form>
         </div>
     </div>
 
-    <section role="carousal" id="carousal">
+    <section role="presentation" id="carousal">
         <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
             <ol class="carousel-indicators">
                 <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
                 <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
                 <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
             </ol>
-            <div class="carousel-inner" role="listbox">
+            <div class="carousel-inner">
                 <div class="carousel-item active">
-                    <img class="d-block img-fluid" src="img/nature.jpg" alt="First slide">
+                    <img class="d-block img-fluid" src="img/nature.jpg" alt="First slide"/>
                 </div>
                 <div class="carousel-item">
-                    <img class="d-block img-fluid" src="img/carousal2.jpg" alt="Second slide">
+                    <img class="d-block img-fluid" src="img/carousal2.jpg" alt="Second slide"/>
                 </div>
                 <div class="carousel-item">
-                    <img class="d-block img-fluid" src="img/carousal3.jpg" alt="Third slide">
+                    <img class="d-block img-fluid" src="img/carousal3.jpg" alt="Third slide"/>
                 </div>
             </div>
             <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
