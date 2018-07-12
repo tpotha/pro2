@@ -12,73 +12,76 @@
 </head>
 
 <body>
-    <div id="topSec" class="fixed-top">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-12">
+                <div role="toolbar" id="topSec" class="fixed-top">
 
-        <nav class="navbar navbar-light bg-faded  ">
-            <a href="#" class="brand">
-                <h1 class="navbar-ms-brand font-italic">
-                    FreshWorld
-                </h1>
-            </a>
-            <ul class="nav nav-pills mr-auto">
-                <li class="nav-item">
-                    <a class="nav-link active" href="#">Home</a>
-                </li>
-                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Dropdown</a>
-                    <div class="dropdown-menu">
-                        <a class="dropdown-item" href="#">Action</a>
-                        <a class="dropdown-item" href="#">Another action</a>
-                        <a class="dropdown-item" href="#">Something else here</a>
-                        <div class="dropdown-divider"></div>
-                        <a class="dropdown-item" href="#">Separated link</a>
-                    </div>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Contact</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">AboutUs</a>
-                </li>
-            </ul>
-            <ul class="nav nav-bar ml-auto">
-                <li class="nav-item  ">
-                    <a class="nav-link " href="#">Sing-In</a>
-                </li>
-                <li class="nav-item ">
-                    <a class="nav-link " href="#">Log-Out</a>
-                </li>
-                <li class="nav-item ">
-                    <a class="nav-link " href="#">
-                        <i class="fas fa-shopping-cart"></i>Cart</a>
-                    </a>
-                </li>
+                    <nav class="navbar navbar-light bg-faded  ">
+                        <a href="#" class="brand">
+                            <h1 class="navbar-ms-brand">
+                                <em>FreshWorld</em>
+                            </h1>
+                        </a>
+                        <ul class="nav nav-pills mr-auto">
+                            <li class="nav-item">
+                                <a class="nav-link active" href="#">Home</a>
+                            </li>
+                            <li class="nav-item dropdown">
+                                <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#" role="button" aria-haspopup="true" aria-expanded="false">Products</a>
+                                <div role="dropdown-box" class="dropdown-menu">
+                                    <a class="dropdown-item" aria-label="Vegitables" href="#">Vegitables</a>
+                                    <a class="dropdown-item" aria-label="Fruits" href="#">Fruits</a>
+                                    <a class="dropdown-item" aria-label="Flowers" href="#">Flowers</a>
+                                    <div class="dropdown-divider"></div>
+                                    <a class="dropdown-item" aria-label="Flower decoration" href="#">Flower decoration</a>
+                                    <a class="dropdown-item" aria-label="Nursery Service" href="#">Nursery Service</a>
+                                </div>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" aria-label="Contact" href="#">Contact</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" aria-label="AboutUs" href="#">AboutUs</a>
+                            </li>
+                        </ul>
+                        <ul class="nav nav-bar ml-auto">
+                            <li class="nav-item  ">
+                                <a class="nav-link " aria-label="Sing-In" href="#">Sing-In</a>
+                            </li>
+                            <li class="nav-item ">
+                                <a class="nav-link " aria-label="Log-Out" href="#">Log-Out</a>
+                            </li>
+                            <li class="nav-item ">
+                                <a class="nav-link " aria-label="Cart" href="#">
+                                    <i class="fas fa-shopping-cart"></i>Cart</a>
+                                </a>
+                            </li>
 
-            </ul>
-        </nav>
-    </div>
-
-    <div class="hero-unit">
-        <div class="hero-content">
-            <h2 class="display-6 text-primary">
-                Welcome to FreshWorld
-                </h2>
-
-                <form action="" class="form-inline">
-                    <div class="form-group">
-                        <div class="form-group">
-                            <input type="text" name="" id="" class="form-control form-control-lg text-center" placeholder="Search items">
-                        </div>
-                    </div>
-
-                    <button type="submit" class="btn btn-success btn-lg">
-                        Go!
-                    </button>
-                </form>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
         </div>
     </div>
-    
-    <section id="carousal">
+    <div role="hero-image-section" class="hero-unit">
+        <div class="hero-content">
+
+            <form action="" class="form-inline search-form" role="form">
+                <div role="form-group" class="form-group">
+                    <label for="search" class="sr-only">Search: </label>
+                    <input type="text" role="search" name="search" id="" class="form-control form-control-lg text-center" placeholder="Search items">&nbsp;
+
+                </div>
+                <button role="button" type="submit" class="btn btn-success btn-lg">
+                    Go!
+                </button>
+
+            </form>
+        </div>
+    </div>
+
+    <section role="carousal" id="carousal">
         <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
             <ol class="carousel-indicators">
                 <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
@@ -107,7 +110,7 @@
         </div>
     </section>
     <div class="container">
-        <div class="row">
+        <div class="row  info-sec">
             <div class="col-4 border border-info">
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis sint, commodi quod laudantium dolore
                     unde velit dolores praesentium fugit autem, officia a officiis inventore ex nulla nisi nostrum laborum
@@ -129,63 +132,64 @@
         </div>
     </div>
     <div class="container">
-            <div class="row">
-              <div class="col-sm-4">
+        <div class="row card-sec">
+            <div class="col-sm-4">
                 <div class="card">
-                  <img class="card-img-top" src="img/card1.jpg" alt="link for city taxi">
-                  <div class="card-body">
-                    <h5 class="card-title">Products</h5>
-                    <p class="card-text">Different kinds of products. Special kind of products of fruits, Vegitables and flowers</p>
-                    <a href="index.html" aria-label="details for city-taxi" class="btn btn-primary">See Details</a>
-                  </div>
+                    <img class="card-img-top" src="img/card1.jpg" alt="link for city taxi">
+                    <div class="card-body">
+                        <h5 class="card-title">Products</h5>
+                        <p class="card-text">Different kinds of products. Special kind of products of fruits, Vegitables and flowers</p>
+                        <a href="index.html" aria-label="details for city-taxi" class="btn btn-primary">See Details</a>
+                    </div>
                 </div>
-              </div>
-        
-              <div class="col-sm-4">
-                <div class="card">
-                  <img class="card-img-top" src="img/card2.jpg" alt="link for outstation">
-                  <div class="card-body">
-                    <h5 class="card-title">Stories</h5>
-                    <p class="card-text">Perennial fruits such as blueberries or perennial vegetables such as asparagus need their own space.</p>
-                    <a href="index.html" aria-label="details for outstation" class="btn btn-primary">See Details</a>
-                  </div>
-                </div>
-              </div>
-        
-              <div class="col-sm-4">
-                <div class="card">
-                  <img class="card-img-top" src="img/card3.jpg" alt="link for rental">
-                  <div class="card-body">
-                    <h5 class="card-title">Nursery</h5>
-                    <p class="card-text">A nursery is a place where plants are propagated and grown to usable size. They include retail nurseries which sell to the general public.</p>
-                    <a href="index.html" aria-label="details for rental" class="btn btn-primary">See Details</a>
-                  </div>
-                </div>
-              </div>
             </div>
-          </div>
+
+            <div class="col-sm-4">
+                <div class="card">
+                    <img class="card-img-top" src="img/card2.jpg" alt="link for outstation">
+                    <div class="card-body">
+                        <h5 class="card-title">Stories</h5>
+                        <p class="card-text">Perennial fruits such as blueberries or perennial vegetables such as asparagus need their own space.</p>
+                        <a href="index.html" aria-label="details for outstation" class="btn btn-primary">See Details</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-sm-4">
+                <div class="card">
+                    <img class="card-img-top" src="img/card3.jpg" alt="link for rental">
+                    <div class="card-body">
+                        <h5 class="card-title">Nursery</h5>
+                        <p class="card-text">A nursery is a place where plants are propagated and grown to usable size. They include retail nurseries
+                            which sell to the general public.</p>
+                        <a href="index.html" aria-label="details for rental" class="btn btn-primary">See Details</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
     <footer>
         <ul>
             <li>
-                <a href="#">Home</a>
+                <a href="#" aria-label="Home">Home</a>
             </li>
             <li>
-                <a href="#">AboutUs</a>
+                <a href="#" aria-label="AboutUs">AboutUs</a>
             </li>
             <li>
-                <a href="#">Contact</a>
+                <a href="#" aria-label="Contact">Contact</a>
             </li>
         </ul>
         <div class="social-links">
             +
-            <a href="https://www.facebook.com">
+            <a class="fb" href="https://www.facebook.com" aria-label="Facebook">
                 <i class="fab fa-facebook-square"></i>
             </a>
 
-            <a href="www.twitter.com">
+            <a class="twr" href="www.twitter.com" aria-label="twitter">
                 <i class="fab fa-twitter"></i>
             </a>
-            <a href="www.google.com">
+            <a class="a-google" href="www.google.com" aria-label="google-plus">
                 <i class="fab fa-google-plus"></i>
             </a>
         </div>

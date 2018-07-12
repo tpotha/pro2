@@ -4,7 +4,7 @@ body {
   font-family: sans-serif;
   padding: 0;
   margin: 0;
-  min-width: 500px; }
+  min-width: 600px; }
 
 * {
   box-sizing: border-box;
@@ -15,6 +15,9 @@ body {
 
 nav {
   border: 1px solid gray; }
+
+.dropdown-menu {
+  background: #05668D; }
 
 h1 {
   font-family: fantasy;
@@ -36,11 +39,15 @@ h1 {
   width: 100%;
   margin-top: 80px;
   text-align: center;
-  align-items: center; }
+  align-items: center;
+  min-width: 600px; }
+
+.search-form {
+  padding: 60px; }
 
 .hero-content {
-  widows: 50%;
-  align-content: center; }
+  align-content: center;
+  width: 100%; }
 
 .container {
   padding: 1rem; }
@@ -49,8 +56,12 @@ h1 {
   border: 1px solid gray;
   background: #7CB8B8; }
 
+.info-sec, .card-sec {
+  background: #7CB8B8; }
+
 #carousal {
-  width: 100%; }
+  width: 100%;
+  padding-top: 10px; }
 
 /* Begin Footer*/
 footer {
@@ -82,3 +93,14 @@ footer p {
   font-size: 30px; }
 
 /* End Footer*/
+@media (max-width: 650px) {
+  .search-form {
+    padding: 100px; } }
+
+@media (max-width: 500px) {
+  header h1 {
+    font-size: 25px;
+    padding: 10px 0 10px 0;
+    margin: 0;
+    text-align: center;
+    text-indent: 0; } }

@@ -5,7 +5,7 @@ body {
     font-family: sans-serif;
     padding: 0;
     margin: 0;
-    min-width: 500px;    
+    min-width: 600px;
 }
 
 * {
@@ -20,7 +20,9 @@ body {
 nav{
  border: 1px solid gray;
 }
-
+.dropdown-menu{
+    background:#05668D
+}
  h1{
     font-family: fantasy;
     letter-spacing: -1px;
@@ -43,11 +45,16 @@ nav{
     margin-top: 80px;
     text-align: center;
     align-items: center;
+    min-width: 600px;
+}
+
+.search-form {
+    padding: 60px;
 }
 
 .hero-content{
-    widows: 50%;
     align-content: center;
+    width:100%;
 }
 
 .container{
@@ -59,8 +66,13 @@ nav{
     background: #7CB8B8;
 }
 
+.info-sec,.card-sec{
+    background: #7CB8B8;
+}
+
 #carousal{
     width: 100%;
+    padding-top: 10px;
 }
 
 /* Begin Footer*/
@@ -99,5 +111,37 @@ footer p {
 
 
 /* End Footer*/
+
+@mixin show-search-box {
+    @media(max-width:650px){  
+        @content;
+    }
+ }
+
+ @include show-search-box {
+    .search-form {
+        padding: 100px;
+    }
+ }
+
+
+ @mixin logo-font-change {
+    @media (max-width:500px){
+        @content;
+    }
+ }
+ 
+ 
+@include logo-font-change{
+    header h1{
+        font-size: 25px;
+        padding: 10px 0 10px 0;
+        margin: 0;
+        text-align: center;
+        text-indent: 0;
+    }
+
+
+}
 
 
