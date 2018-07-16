@@ -1,0 +1,55 @@
+## Trello:
+
+Trello is a Kanban tool which enables developers to track their work in the form Boards, Lists and Cards.
+
+1. Boards: The developer creates a board for every project. Each board is given a name, and the developer is free to edit it at any time. He could archive boards when he completes working on the project
+1. Lists: Each board contains a number of lists, arranged horizontally. The developer is free to create as many lists as he wants. He would ideally create list describing his tasks, E.g., 'Spring Backlog', 'In Progress', 'Blocked', 'Review', 'Released'. He is free to create, update and re-arrange lists.
+1. Cards: Developer creates a card for every feature / store in the project. He can edit or delete the cards as required. He moves around the card to different lists to track it's status, and is allowed to re-arrange the cards within a list to prioritize. Developer tries to mark all of his tasks as complete.
+
+Required Functionality:
+1. A Dashboard, which displays all boards created by the developer. Developer may create, edit or archive a board from here.
+2. Board view, which displays lists, and cards within the lists. It allows the developer to create, edit, delete and rearrange lists and cards
+3. Upon refresh, the data should not be lost
+
+
+## Movie Cruiser
+
+A library of movies used by Movie Enthusiasts to organize their interests into collections. The Movie Cruiser application will display the most popular movies on the dashboard, and will also allow the user to search for movies. The User may create a collection with any name, and add, remove and rearrange movies within the list. User should be able to add a movie to a collection from the movie card itself.
+
+1. Dashboard: displays the most popular movies, Top User Collections, and a search bar to search for movies. Movies should be displayed in a new view when searched for
+2. Collections: A view that displays all user collections. User should be able to create new collections from this screen, or select a collection to display all movies in the list
+3. Collection: A view that displays all movies in a collection. User is allowed to rearrange or remove movies from the collection, and also rename the collection
+4. User should be able to add a movie displayed on any view to any collection
+
+
+## Foodie
+
+A library of Restaurants used by Food Enthusiasts to organize their interests into collections.
+
+1. Dashboard: displays a search bar, where the user can search for a restaurant or cuisine of his choice
+2. Collections: A view that displays all user created collections. User should be able to create new collections from this screen, or select a collection to display all movies in the list
+3. Collection: A view that displays all restaurants in a collection. User is allowed to rearrange or remove restaurants from the collection, and rename the collection
+4. User should be able to add a movie displayed on any view to any collection
+
+## Github Bot
+
+A Chat based application interface which enables users to perform actions on github using english sentences.
+
+When user types an english sentence, such as "Create a repository named 'foo-bar'", a create repository widget appears, with the name filled in. User can interact with the form to change the information, and confirm to perform the action
+
+Following commands need to be supported:
+1. Create Repository
+2. Add collaborators to repository
+3. Create Issues
+4. Add comments to issue
+5. Close issue
+6. Show last comments in issue
+
+## Keep
+An application that enables user to manage his / her tasks.
+
+Minimum functionality that needs to be supported:
+1. Creation of a new list, giving it a name, and adding items to it, archiving it
+2. Rearranging items in lists (Drag and drop)
+3. Rearranging lists (Drag and drop)
+4. Mark items as complete when done, and capture the time and date when it is marked as complete

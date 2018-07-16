@@ -1,6 +1,6 @@
 
 @import 'https://use.fontawesome.com/releases/v5.1.0/css/all.css';
-@import 'bootstrap.css';
+@import './node_modules/bootstrap/scss/bootstrap.scss';
 body {
     font-family: sans-serif;
     padding: 0;
@@ -122,35 +122,56 @@ footer p {
 
 /* End Footer*/
 
-@mixin show-search-box {
-    @media(max-width:650px){  
-        @content;
-    }
- }
 
- @include show-search-box {
+@media (max-width: 650px) {
     .search-form {
-        padding: 100px;
-    }
- }
+      padding: 100px; } }
+  
+  @media (max-width: 500px) {
+    header h1 {
+      font-size: 25px;
+      padding: 10px 0 10px 0;
+      margin: 0;
+      text-align: center;
+      text-indent: 0; } }
+
+ $pixel : 10px;
+
+ @mixin border-radius($pixel) {
+      border-radius: $pixel;
+  }
+  .card-sec,.card {
+     @include border-radius($pixel);
+  }
+// @mixin show-search-box {
+//     @media(max-width:650px){  
+//         @content;
+//     }
+//  }
+
+//  @include show-search-box {
+//     .search-form {
+//         padding: 100px;
+//     }
+//  }
 
 
- @mixin logo-font-change {
-    @media (max-width:500px){
-        @content;
-    }
- }
+//  @mixin logo-font-change {
+//     @media (max-width:500px){
+//         @content;
+//     }
+//  }
  
  
-@include logo-font-change{
-    header h1{
-        font-size: 25px;
-        padding: 10px 0 10px 0;
-        margin: 0;
-        text-align: center;
-        text-indent: 0;
-    }
+// @include logo-font-change{
+//     header h1{
+//         font-size: 25px;
+//         padding: 10px 0 10px 0;
+//         margin: 0;
+//         text-align: center;
+//         text-indent: 0;
+//     }
 
-}
+// }
 
 
